@@ -221,4 +221,4 @@ true;
 false;
 ```
 
-Más allá de los tipos de valores `string`/`number`/`boolean`, es común que los lenguajes de programación provean *arreglos*, *objectos*, *funciones*, y más. En las lecciones siguientes vamos a cubrir todos estos tipos de datos :boom: .
+Más allá de los tipos de valores `string`/`number`/`boolean`, es común que los lenguajes de programación provean *arreglos*, *objectos*, *funciones*, y más. En las lecciones siguientes vamos a cubrir todos estos tipos de datos.
