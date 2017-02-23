@@ -26,7 +26,7 @@ Las letras `a` y `b` son llamadas *variables*, que son como pequeñas cajas en l
 
 En contraste, el número `2` por sí mismo es sólo un valor, a eso le llamamos *valor literal*, porque está solo dentro del código y no está almacenado en una variable.
 
-Los caracteres `=` y `*`  son *operators*  -- ellos realizan acciones con los valores y las variables, como  en el ejemplo en el cual estamos realizando una operación matemática.
+Los caracteres `=` y `*`  son *operadores*  -- ellos realizan acciones con los valores y las variables, como  en el ejemplo en el cual estamos realizando una operación matemática.
 
 La mayoría de las instrucciones en JavaScript terminan con (`;`).
 
