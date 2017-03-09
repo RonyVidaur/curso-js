@@ -1,0 +1,21 @@
+// document.getElementsByClassName('className')
+// document.getElementById('id')
+// document.getElementsByName('name')
+// document.getElementsByTagName('tagName')
+// document.querySelector('query')
+// document.querySelectorAll('query')
+var agujaHoras = document.querySelector('.aguja-horas')
+// console.log(agujaHoras)
+var agujaMinutos = document.querySelector('.aguja-minutos')
+var agujaSegundos = document.querySelector('.aguja-segundos')
+
+function obtenerHora() {
+  var fecha = new Date()
+  console.log(fecha)
+  // getSeconds()
+  // getMinutes()
+  // getHours()
+  var hora = fecha.getHours()
+  console.log(hora)
+}
+obtenerHora()
