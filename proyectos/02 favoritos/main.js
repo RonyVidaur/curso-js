@@ -19,6 +19,8 @@ function  guardarFavorito(e) {
     favoritos.push(favorito)
     localStorage.setItem('favoritos', JSON.stringify(favoritos))
   }
+  
+  cargarFavoritos()
   // evitar que la pagina se recargue al presionar el boton submit
   e.preventDefault()
 }
@@ -33,8 +35,19 @@ function cargarFavoritos() {
     resultadoFavoritos.innerHTML += '<div class="well"' +
                                       "<h3>"+ nombre +
                                       '<a target="_blank" class="btn btn-default" href="' + url + '">Visitar</a>' +
-                                      '<a class="btn btn-danger" href="#"'+ '">Borrar</a>' +  
+                                      '<a onclick="eliminarFavorito(\''+ url +'\')" class="btn btn-danger" href="#"'+ '">Borrar</a>' +
                                       '</h3>' +
                                     '</div>'
   }
+}
+
+function eliminarFavorito(url) {
+  var favoritos = JSON.parse(localStorage.getItem('favoritos'))
+  for (var i = 0; i < favoritos.length; i++) {
+    if (favoritos[i].url === url) {
+      favoritos.splice(i, 1)
+    }
+  }
+  localStorage.setItem('favoritos', JSON.stringify(favoritos))
+  cargarFavoritos()
 }
