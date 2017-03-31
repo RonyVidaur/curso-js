@@ -1,41 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Prueba</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookmarker</title>
 
-
-
-    <link rel="stylesheet" href="master.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
-  <body>
+
+  <body onload="">
+
     <div class="container">
-      <div class="page-header">
-        <h1>Favoritos</h1>
+      <div class="header clearfix">
+        <nav>
+
+        </nav>
+        <h3 class="text-muted">Bookmarker</h3>
       </div>
+
       <div class="jumbotron">
-        <p>Bienvenido al proyecto Favoritos</p>
+        <h2>Guarda tus sitios favoritos</h2>
         <form id="formularioPrincipal">
           <div class="form-group">
-            <label for="">Nombre del sitio</label>
-            <input type="text" class="form-control" id="nombre" value="" placeholder="Nombre">
+            <label>Nombre del sitio</label>
+            <input type="text" class="form-control" id="nombreSitio" placeholder="Nombre del sitio">
           </div>
           <div class="form-group">
             <label>URL del sitio</label>
-            <input type="text" id="url" class="form-control" placeholder="URL">
+            <input type="text" class="form-control" id="urlSitio" placeholder="URL del sitio">
           </div>
-          <button type="submit" name="button" class="btn btn-primary">Guardar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
       </div>
 
-    </div>
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <div id="resultadoFavoritos"></div>
+        </div>
+      </div>
 
-  <script src="main.js" charset="utf-8"></script>
+      <footer class="footer">
+        <p>&copy; 2016 Bookmarker, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- <script -->
+    <!-- src="https://code.jquery.com/jquery-3.1.1.js" -->
+    <!-- integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" -->
+    <!-- crossorigin="anonymous"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="main.js"></script>
   </body>
 </html>
